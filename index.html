@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MUSICO</title>
+</head>
+<body>
+    <div class="nav">
+        <img src="/image/navlogopng.png" alt="">
+        <a href="#" class="nav-item"><h4>HOME</h4></a>
+        <a href="#page2" class="nav-item"><h4>ABOUT US</h4></a>
+        <a href="#page3" class="nav-item"><h4>ARTISTS</h4></a>
+        <a href="#page4" class="nav-item"><h4>TRACKS</h4></a>
+        <a href="#" class="nav-item"><h4>CONTACT US</h4></a>
+    </div> 
+    
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-blur" data-cursor-outline></div>
+
+    <video autoplay loop muted src="./video/bg-video.mp4"></video>
+    
+    <div id="main">
+        
+        <div id="page1">
+
+            <svg viewBox="0 0 800 200" width="900" height="200" fill="none">
+                <text x="50%" y="70%" fill="" text-anchor="middle"  >
+                    MUSIC IS LIFE
+                </text>
+
+            </svg>
+
+        
+
+            <h2>WELCOME TO MUSICO</h2>
+            <p>ONE GOOD THING ABOUT MUSIC, WHEN IT HITS YOU,YOU FEEL NO PAIN !</p>
+        </div>
+
+
+        <div id="page2">
+
+            <div id="scroller">
+                <div id="scroller-in">
+                    <h4> <span>MUSICO</span></h4>
+                    <h4>PLAY</h4>
+                    <h4>LISTEN</h4>
+                    <h4>FEEL</h4>
+                </div>
+                <div id="scroller-in">
+                    <h4><span>MUSICO</span></h4>
+                    <h4>PLAY</h4>
+                    <h4>LISTEN</h4>
+                    <h4>FEEL</h4>
+                </div>
+                <div id="scroller-in">
+                    <h4><span>MUSICO</span></h4>
+                    <h4>PLAY</h4>
+                    <h4>LISTEN</h4>
+                    <h4>FEEL</h4>
+                </div>
+            </div>
+
+
+
+            <div id="about-us"> 
+                
+                <div class="about-us-text">
+                    <h3>ABOUT US</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nostrum odio sapiente recusandae natus dolorem quia voluptates delectus fugit ipsam ut, libero sunt aliquam deserunt numquam excepturi nihil sint molestiae quo provident autem inventore quod assumenda impedit! Id vitae ea dolorem voluptatem. Aliquid culpa iste nobis doloribus optio nihil saepe!</p>
+                    <a href="#">CONTACT NOW</a>
+                </div>
+                
+                
+                <div class="box">
+                    
+                        <img src="./image/logo.jpg" alt="picture of developer">
+                    
+
+                    <!-- <div class="contentBx">
+                        <h2>ABOUT MUSICO</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi eius harum qui soluta fugit illo, molestias sed aliquid eveniet iure. </p>
+                    </div> -->
+                </div>
+                
+            </div>
+            <div class="aboutendText">
+                <span class="greenText greenText1">where</span>
+                <span class="pinkText pinkText1">words</span>
+                <span class="greenText greenText2">fail ,</span>
+                <span class="pinkText pinkText2">music</span>
+                <span class="greenText greenText3">speaks</span>
+                
+            </div>
+            
+            
+        </div>
+
+
+
+    <div id="page3">
+
+        <div class="artistsHeading">
+            <h4>POPULAR ARTISTS</h4>
+            <p>Feel and enjoy with their magical voice</p>
+        </div>
+        <div class="container">
+        
+            <div class="horizontal-scroll">
+
+                <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i class="fas fa-chevron-right"></i></button>
+
+                <div class="singers">
+
+                    <div class="singer1 singerBox"><img src="./singers-img/arijitSingh.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>ARIJIT SINGH</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="singer2 singerBox"><img src="./singers-img/armanMalik.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>ARMAAN MALIK</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+                    <div class="singer3 singerBox"><img src="./singers-img/DarshanRaval.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>Darshan Raval</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+                    <div class="singer4 singerBox"><img src="./singers-img/jubinNautiyal.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>Jubin Nautiyal</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+                    <div class="singer5 singerBox"><img src="./singers-img/kk.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>KK </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+                    <div class="singer6 singerBox"><img src="./singers-img/sonuNigam.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>Sonu Nigam</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+                    <div class="singer7 singerBox"><img src="./singers-img/shaan.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>shaan</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+                    <div class="singer8 singerBox"><img src="./singers-img/badshah.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>Badshah</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+                    <div class="singer9 singerBox"><img src="./singers-img/honeySingh.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>Honey Singh</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+                    <div class="singer10 singerBox"><img src="./singers-img/king.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>king</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+                    <div class="singer10 singerBox"><img src="./singers-img/emiwayBanati.jpg" alt="image">
+                        <div class="overlay">
+                            <h4>Emiway Bantai</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iure.</p>
+                            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+    <img src="./image/bgpage4.jpg" alt="" class="backimgPage4">
+    <img src="./image/pinklinepage4.png" alt="" class="backimgPage4">
+    
+    
+    <div id="page4">
+
+       
+
+        <div class="page4Container">
+
+            <div class="page4Box">
+                <div class="menu_side">
+                    <h1>Playlist</h1>
+                    <div class="playlist">
+                        <h4 class="active"><span></span><i class="bi bi-music-note-beamed active"></i>Playlist</h4>
+                        <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
+                        <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+                    </div>
+                    <div class="menu_song">
+                        <li class="songItem">
+                            <span>01</span>
+                            <img src="./musicimg/1.jpg" alt="">
+                            <h5>On My Way <br><div class="subtitle">Alan Walker</div>
+                            </h5>
+                            <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                        </li>
+                        <li class="songItem">
+                            <span>02</span>
+                            <img src="./musicimg/2.jpg" alt="">
+                            <h5>On My Way <br><div class="subtitle">Alan Walker</div>
+                            </h5>
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                        </li>
+                        <li class="songItem">
+                            <span>03</span>
+                            <img src="./musicimg/3.jpg" alt="">
+                            <h5>On My Way <br><div class="subtitle">Alan Walker</div>
+                            </h5>
+                            <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                        </li>
+                        <li class="songItem">
+                            <span>04</span>
+                            <img src="./musicimg/4.jpg" alt="">
+                            <h5>On My Way <br><div class="subtitle">Alan Walker</div>
+                            </h5>
+                            <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                        </li>
+                        <li class="songItem">
+                            <span>05</span>
+                            <img src="./musicimg/5.jpg" alt="">
+                            <h5>On My Way <br><div class="subtitle">Alan Walker</div>
+                            </h5>
+                            <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                        </li>
+                        <li class="songItem">
+                            <span>06</span>
+                            <img src="./musicimg/6.jpg" alt="">
+                            <h5>On My Way <br><div class="subtitle">Alan Walker</div>
+                            </h5>
+                            <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                        </li>
+                        
+                    </div>
+                </div>
+
+
+
+
+                <div class="song_side">
+                    <div class="songNav">
+                        <ul>
+                            <li>Discover <span></span></li>
+                            <li>My Library</li>
+                            <li>Radio</li>
+                        </ul>
+                        <div class="search">
+                            <i class="bi bi-search"></i>
+                            <input type="text" placeholder="Search Music...">
+                        </div>
+                        <!-- <div class="user">
+                            <img src="" alt="">
+                        </div> -->
+                    </div>
+
+                    <div class="content">
+                        <h1>Alan Walker Fade</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos aut pariatur sit iusto delectus.</p>
+                        <div class="buttons">
+                            <button>PLAY</button>
+                            <button>FOLLOW</button>
+                        </div>
+                    </div>
+
+                    <div class="popular_song">
+                        <div class="h4">
+                            <h4>Popular Song</h4>
+                            <div class="btn_s">
+                                <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                                <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                            </div>
+                        </div>
+                        <div class="pop_song">
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/1.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="7"></i>
+                                </div>
+                                <h5>On My Way <br>
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/2.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="8"></i>
+                                </div>
+                                <h5>Dilbar <br>
+                                    <div class="subtitle">Neha Kakkar</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/3.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="9"></i>
+                                </div>
+                                <h5>Jo Tu Na Mila <br>
+                                    <div class="subtitle">Asim Azhar</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/4.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="10"></i>
+                                </div>
+                                <h5>Humnava Mere <br>
+                                    <div class="subtitle">Jubin Nautiyal</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/5.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="11"></i>
+                                </div>
+                                <h5>Tera Zikr <br>
+                                    <div class="subtitle">Darshan Raval</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/6.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="12"></i>
+                                </div>
+                                <h5>Kalaastar <br>
+                                    <div class="subtitle">Yo Yo Honey Singh </div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/7.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="13"></i>
+                                </div>
+                                <h5>Tu Aake Dekhle <br>
+                                    <div class="subtitle">King</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/8.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="14"></i>
+                                </div>
+                                <h5>Maan Meri Jaan <br>
+                                    <div class="subtitle">King</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/9.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="15"></i>
+                                </div>
+                                <h5>Gone Girl <br>
+                                    <div class="subtitle">Badshah</div>
+                                </h5>
+                            </li>
+                            <!-- <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/10.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="16"></i>
+                                </div>
+                                <h5>Kaley Sheshe <br>
+                                    <div class="subtitle">Addy Nagar</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/11.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="17"></i>
+                                </div>
+                                <h5>Lut Gaye <br>
+                                    <div class="subtitle">Jubin Nautiyal</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/12.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="18"></i>
+                                </div>
+                                <h5>Dil Mein Ho Tum <br>
+                                    <div class="subtitle">Armaan Malik</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/13.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="19"></i>
+                                </div>
+                                <h5>Main Agar Kahoon <br>
+                                    <div class="subtitle">Sonu Nigam</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/14.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Cheques <br>
+                                    <div class="subtitle">Shubh</div>
+                                </h5>
+                            </li>
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="./musicimg/15.jpg" alt="">
+                                    <i class="bi  playListPlay bi-play-circle-fill" id="21"></i>
+                                </div>
+                                <h5>High Rated Gabru <br>
+                                    <div class="subtitle">Guru Randhawa</div>
+                                </h5>
+                            </li> -->
+
+
+                                
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="master_play">
+                    <div class="wave" id="wave">
+                        <div class="wave1"></div>
+                        <div class="wave1"></div>
+                        <div class="wave1"></div>
+                    </div>
+                    <img src="./musicimg/1.jpg" alt="" id="poster_master_play">
+                    <h5 id="title">
+                        On My Way
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <div class="icon">
+                        <i class="bi shuffle bi-music-note-beamed">next</i>
+                        <i class="bi bi-skip-start-fill" id="back"></i>
+                        <i class="bi bi-play-fill" id="masterPlay"></i>
+                        <i class="bi bi-skip-end-fill" id="next"></i>
+                        <a href="" download id="download_music"><i class="bi bi-cloud-arrow-down-fill"></i></a>
+                    </div>
+                    <span id="currentStart">0:00</span>
+                    <div class="bar">
+                        <input type="range" id="seek" min="0" max="100">
+                        <div class="bar2" id="bar2"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <span id="currentEnd">0:30</span>
+                    <div class="vol">
+                        <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                        <input type="range" min="0" max="100" id="vol">
+                        <div class="vol_bar"></div>
+                        <div class="dot" id="vol_dot"></div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+
+        </div>  
+    </div>
+        
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="vanilla-tilt.min.js"></script>
+    <script src="script.js"></script> 
+
+</body>
+</html>
